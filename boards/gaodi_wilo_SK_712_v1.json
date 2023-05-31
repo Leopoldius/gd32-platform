@@ -13,7 +13,7 @@
     "openocd_target": "stm32f4x",
     "svd_path": "GD32F4xx.svd",
     "default_tools": [
-      "stlink"
+      "jlink"
     ],
     "openocd_extra_pre_target_args": [
       "-c",
