@@ -21,7 +21,7 @@ from platform import system
 from platformio.managers.platform import PlatformBase
 from platformio.util import get_systype
 
-class GD32CortexM(PlatformBase):
+class Gd32cortexm(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         board = variables.get("board")
