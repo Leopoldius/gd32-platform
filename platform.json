@@ -1,5 +1,5 @@
 {
-  "name": "gd32_platform",
+  "name": "gd32-platform",
   "title": "GD GD32",
   "description": "GigaDevice GD32 MCU has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
   "homepage": "http://www.gd32mcu.com/en/product",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CommunityGD32Cores/platform-gd32"
+    "url": "https://github.com/Leopoldius/gd32-platform.git"
   },
   "version": "1.0.0",
   "frameworks": {
@@ -26,13 +26,6 @@
       "description": "Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices",
       "homepage": "https://os.mbed.com/",
       "title": "Mbed"
-    },
-    "spl": {
-      "package": "framework-spl-gd32",
-      "script": "builder/frameworks/spl.py",
-      "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
-      "homepage": "http://www.gd32mcu.com/en/download/",
-      "title": "Standard Peripheral Library"
     },
 	"gd32_spl": {
       "package": "framework-gd32_spl",
@@ -75,12 +68,6 @@
       "optionalVersions": [
         "~6.51506.0"
       ]
-    },
-    "framework-spl-gd32": {
-      "type": "framework",
-      "optional": true,
-      "owner": "maxgerhardt",
-      "version": "https://github.com/CommunityGD32Cores/gd32-pio-spl-package.git"
     },
 	"framework-gd32_spl": {
       "type": "framework",
