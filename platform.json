@@ -1,5 +1,5 @@
 {
-  "name": "gd32",
+  "name": "gd32 platform",
   "title": "GD GD32",
   "description": "GigaDevice GD32 MCU has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
   "homepage": "http://www.gd32mcu.com/en/product",
@@ -35,7 +35,7 @@
       "title": "Standard Peripheral Library"
     },
 	"gd32_spl": {
-      "package": "framework-gd32-fwlib",
+      "package": "framework-gd32_spl",
       "script": "builder/frameworks/gd32_spl.py",
       "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
       "homepage": "http://www.gd32mcu.com/en/download/",
@@ -82,7 +82,7 @@
       "owner": "maxgerhardt",
       "version": "https://github.com/CommunityGD32Cores/gd32-pio-spl-package.git"
     },
-	"framework-gd32-fwlib": {
+	"framework-gd32_spl": {
       "type": "framework",
       "optional": true,
       "owner": "Leopoldius",
