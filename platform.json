@@ -1,5 +1,5 @@
 {
-  "name": "gd32_platform",
+  "name": "gd32platforms",
   "title": "GD32 Platform",
   "description": "GigaDevice GD32 MCU has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
   "homepage": "http://www.gd32mcu.com/en/product",
@@ -20,12 +20,33 @@
   },
   "version": "1.0.0",
   "frameworks": {
+    "mbed": {
+      "package": "framework-mbed",
+      "script": "builder/frameworks/mbed.py",
+      "description": "Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices",
+      "homepage": "https://os.mbed.com/",
+      "title": "Mbed"
+    },
 	"gd32_spl": {
       "package": "framework-gd32_spl",
       "script": "builder/frameworks/gd32_spl.py",
       "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
       "homepage": "http://www.gd32mcu.com/en/download/",
       "title": "GD32 Standard Peripheral Library"
+    },
+    "arduino": {
+      "package": "framework-arduinogd32",
+      "script": "builder/frameworks/arduino.py",
+      "description": "Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences",
+      "homepage": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32",
+      "title": "Arduino"
+    },
+    "wifi-sdk": {
+      "package": "framework-wifi-sdk-gd32",
+      "script": "builder/frameworks/wifi-sdk.py",
+      "description": "GD32W51x WIFI SDK",
+      "homepage": "http://www.gd32mcu.com/en/download/0?kw=GD32W5",
+      "title": "WiFi SDK"
     }
   },
   "packages": {
@@ -39,12 +60,33 @@
         "~1.90201.0"
       ]
     },
+    "framework-mbed": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~6.60900.0",
+      "optionalVersions": [
+        "~6.51506.0"
+      ]
+    },
 	"framework-gd32_spl": {
       "type": "framework",
       "optional": true,
       "owner": "Leopoldius",
       "version": "https://github.com/Leopoldius/framework-gd32-fwlib.git"
 	},
+    "framework-arduinogd32": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32.git"
+    },
+    "framework-wifi-sdk-gd32": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "https://github.com/CommunityGD32Cores/gd32-pio-wifi-sdk.git"
+    },
     "tool-sreccat": {
       "owner": "platformio",
       "version": "~1.164.0",
