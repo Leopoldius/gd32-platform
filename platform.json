@@ -29,7 +29,7 @@
     },
     "spl": {
       "package": "framework-spl-gd32",
-      "script": "builder/frameworks/spl.py",
+      "script": "builder/frameworks/gd32_spl.py",
       "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
       "homepage": "http://www.gd32mcu.com/en/download/",
       "title": "Standard Peripheral Library"
