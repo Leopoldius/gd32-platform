@@ -21,7 +21,7 @@
     ]
   },
   "frameworks": [
-    "spl"
+    "gd32_spl"
   ],
   "name": "GD32F405RE (192k RAM, 512k Flash)",
   "upload": {
